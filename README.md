@@ -1,1 +1,1 @@
-# DQLab - All Modules Class
+# DQLab - All Modules
