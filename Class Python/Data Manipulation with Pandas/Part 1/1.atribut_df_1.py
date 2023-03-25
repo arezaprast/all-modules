@@ -3,9 +3,9 @@ import pandas as pd
 number_list = pd.Series([1,2,3,4,5,6])
 # DataFrame
 matrix_list = pd.DataFrame([[1,2,3],
-				            ['a','b','c'],
-				            [3,4,5],
-				            ['d',4,6]])
+			    ['a','b','c'],
+			    [3,4,5],
+			    ['d',4,6]])
 # [1] method .info()
 print("[1] method .info()")
 print(matrix_list.info())
