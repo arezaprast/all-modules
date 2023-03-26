@@ -12,3 +12,8 @@ print(retail_raw['quantity'].fillna(retail_raw.quantity.mean()))
 # Drop missing value
 print('\nDrop missing value:')
 print(retail_raw['quantity'].dropna())
+
+# nama_dataframe['nama_kolom'].fillna(nama_dataframe.nama_kolom.function())
+#   .function() yang dimaksud pada syntax di atas adalah penggunan fungsi .mean() atau .mode().
+#   Penggunaan fungsi .mean() atau .mode() ini bergantung pada kondisi yang mengharuskan menggunakan
+#   nilai rata-rata atau modus dari kolom yang akan diimputasi.
