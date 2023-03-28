@@ -1,5 +1,5 @@
 import pandas as pd
-# Baca file sample_tsv.tsv untuk 10 baris pertama saja
+# Baca file sample_tsv.tsv untuk 10 baris pertama saja 
 df = pd.read_csv("https://storage.googleapis.com/dqlab-dataset/sample_tsv.tsv", sep="\t", nrows=10)
 # Cetak data frame awal
 print("Dataframe awal:\n", df)
