@@ -22,7 +22,7 @@ retail_table['order_date'] = pd.to_datetime(retail_table['order_date'])
 print('\nFILTER 5 PROVINCE TERBESAR DI PULAU JAWA\n')
 java = ['DKI Jakarta','Jawa Barat','Jawa Tengah','Jawa Timur','Yogyakarta']
 retail_table = retail_table.loc[retail_table['province'].isin(java)]
-#      Untuk memastikan kolom provinsi isinya sudah sama dengan java
+# Untuk memastikan kolom provinsi isinya sudah sama dengan java
 print(retail_table['province'].unique())
 # [5]. Kelompokkan sesuai dengan order_date dan province kemudian aggregasikan
 groupby_city_province = retail_table.groupby(['order_date','province']).agg({
