@@ -17,7 +17,7 @@ for k in range(1, 10):
     
 ##Inertia plot
 plt.plot(range(1, 10), inertia)
-plt.title('The Elbow Method', fontsize = 20)
+plt.title('The Elbow Method - Inertia Plot', fontsize = 20)
 plt.xlabel('No. of Clusters')
 plt.ylabel('inertia')
 plt.show()
