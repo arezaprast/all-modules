@@ -49,3 +49,4 @@ def transform_to_list(x):
     #jika tidak ada data, ubah menjadi list kosong
         return []
 movie_df['genres'] = movie_df['genres'].apply(lambda x: transform_to_list(x))
+
