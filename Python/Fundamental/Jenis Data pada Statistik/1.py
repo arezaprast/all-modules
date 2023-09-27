@@ -1,0 +1,1 @@
+# Jenis Data pada Statistik
