@@ -1,0 +1,1 @@
+# Ukuran Data: Variasi
