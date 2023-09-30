@@ -1,1 +1,0 @@
-# Mengenal Visualisasi Data Statistik
