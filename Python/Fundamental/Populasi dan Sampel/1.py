@@ -1,1 +1,0 @@
-# Populasi dan Sampel
