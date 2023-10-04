@@ -1,0 +1,1 @@
+-- Mengolah Data Teks Dasar pada MySQL
