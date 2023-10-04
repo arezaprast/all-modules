@@ -1,0 +1,1 @@
+-- Menggunakan Subquery pada SQL
