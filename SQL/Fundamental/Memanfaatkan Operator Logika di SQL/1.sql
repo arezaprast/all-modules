@@ -1,0 +1,1 @@
+-- Memanfaatkan Operator Logika di SQL
