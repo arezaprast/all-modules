@@ -1,1 +1,0 @@
--- Menggunakan ORDER BY untuk Mengurutkan Data
