@@ -1,1 +1,0 @@
--- Data Engineer Challenge with SQL
