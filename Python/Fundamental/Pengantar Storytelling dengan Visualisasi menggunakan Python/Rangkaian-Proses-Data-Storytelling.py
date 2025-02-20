@@ -1,4 +1,4 @@
-# ---Membaca Dataset---
+# --- Membaca Dataset ---
 #Mengimport library Pandas 
 import pandas as pd
 #Membaca dan menampilkan dataset
@@ -15,7 +15,7 @@ print('\nStatistik deskriptif:')
 print('---------------------')
 print(dataset_shopping.describe())
 
-# ---Menentukan Jumlah Pelanggan Berdasarkan Genre---
+# --- Menentukan Jumlah Pelanggan Berdasarkan Genre ---
 #Kode sebelumnya
 #Mencari pembeli dengan jenis kelamin pria
 Male_dataset = dataset_shopping[(dataset_shopping['Genre']=='Male')].reset_index()
@@ -26,7 +26,7 @@ Female_dataset = dataset_shopping[(dataset_shopping['Genre']=='Female')].reset_i
 jumlah_wanita = Female_dataset['Genre'].count()
 print('Jumlah Pelanggan Wanita =',jumlah_wanita)
 
-# ---Visualisasi Persentase Pelanggan Berdasarkan Genre---
+# --- Visualisasi Persentase Pelanggan Berdasarkan Genre ---
 #Kode sebelumnya
 #Jumlah pelanggan berdasarkan Genre
 jumlah_pelanggan = dataset_shopping.groupby('Genre')['CustomerID'].count().rename('Jumlah pelanggan').reset_index()
@@ -37,7 +37,7 @@ plt.pie(jumlah_pelanggan['Jumlah pelanggan'], labels=jumlah_pelanggan['Genre'], 
 plt.tight_layout()
 plt.show()
 
-# ---Menentukan Segmentasi Genre dan Usia---
+# --- Menentukan Segmentasi Genre dan Usia ---
 #Kode sebelumnya
 ##Menghitung rentang usia pelanggan masing - masing Genre
 #Membagi kelompok usia
@@ -55,7 +55,7 @@ dataset_shopping['Range Usia'] = dataset_shopping.apply(lambda row: label_usia(r
 shopping_group = dataset_shopping.groupby(['Genre', 'Range Usia'])['CustomerID'].count().rename('Jumlah Pelanggan')
 print(shopping_group)
 
-# ---Visualisasi Segmentasi Genre dan Usia - Pie Chart---
+# --- Visualisasi Segmentasi Genre dan Usia - Pie Chart ---
 #Kode sebelumnya
 def label_usia(row):
     if row['Age'] < 21:
@@ -84,7 +84,7 @@ axs[1].set_title('Persentase Kelompok Usia\nPelanggan Wanita')
 plt.tight_layout()
 plt.show()
 
-# ---Visualisasi Segmentasi Genre dan Usia - Grouped Bar---
+# --- Visualisasi Segmentasi Genre dan Usia - Grouped Bar ---
 #Kode sebelumnya
 def label_usia(row):
     if row['Age'] < 21:
@@ -121,7 +121,7 @@ ax.legend()
 plt.tight_layout()
 plt.show()
 
-# ---Menentukan Annual Income & Spending Score Berdasarkan Genre dan Usia---
+# --- Menentukan Annual Income & Spending Score Berdasarkan Genre dan Usia ---
 #Kode sebelumnya
 def label_usia(row):
     if row['Age'] < 21:
@@ -136,7 +136,7 @@ dataset_shopping['Range Usia'] = dataset_shopping.apply(lambda row: label_usia(r
 group_income = dataset_shopping.groupby(['Genre', 'Range Usia']).mean()[['Annual Income (k$)', 'Spending Score (1-100)']]
 print(group_income)
 
-# ---Visualisasi Annual Income Berdasarkan Genre dan Usia---
+# --- Visualisasi Annual Income Berdasarkan Genre dan Usia ---
 #Kode sebelumnya
 def label_usia(row):
     if row['Age'] < 21:
@@ -183,7 +183,7 @@ ax2.set_title('Persentase pendapatan tahunan\npelanggan wanita berdasarkan\nkelo
 plt.tight_layout()
 plt.show()
 
-# ---Visualisasi Spending Score Berdasarkan Genre dan Usia---
+# --- Visualisasi Spending Score Berdasarkan Genre dan Usia ---
 #Kode sebelumnya
 def label_usia(row):
     if row['Age'] < 21:
